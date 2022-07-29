@@ -2,5 +2,5 @@
 
 function dd ( $data ) {
     echo "<pre>";
-    die(print_r( $data ));
+    die(print_r( $data , true));
 }

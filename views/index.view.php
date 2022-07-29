@@ -4,16 +4,14 @@
 
         <h3>Home Page</h3>
     
-        <?php foreach($tasks as $task) : ?>
-            <?php 
-            if($task->complete){
-                echo "<p><strike> $task->description </strike></p>";
-            } else {
-                echo "<p> $task->description </p>";
-            }
-            ?>
-        <?php endforeach ?>
+        <div class="my-5 col-4 mx-auto">
+            <h4>Submit for you name</h4>
 
+            <form action="/names" method="POST" class="text-start mt-4">
+                <input type="text" class="form-control mb-3" name="name" id="">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
     </div>
 
 <?php require 'views/partials/footer.php'; ?>
