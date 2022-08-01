@@ -1,7 +1,9 @@
 <?php
 
-$tasks = $qry->getAllData('tasks');
+$users = $db->getAllData('users');
 
-require 'views/index.view.php';
+view('index', [
+    'users' => $users
+]);
 
 

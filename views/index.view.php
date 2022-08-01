@@ -12,6 +12,14 @@
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
+
+        <?php 
+            
+            foreach ($users as $user) {
+                echo $user->name . '<br>';
+            } 
+        ?>
+
     </div>
 
 <?php require 'views/partials/footer.php'; ?>

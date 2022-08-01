@@ -1,3 +1,3 @@
 <?php
 
-require 'views/product.view.php';
+view('contact');
