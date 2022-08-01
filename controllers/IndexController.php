@@ -1,6 +1,6 @@
 <?php
 
-$users = $db->getAllData('users');
+$users = App::get('database')->getAllData('users');
 
 view('index', [
     'users' => $users
