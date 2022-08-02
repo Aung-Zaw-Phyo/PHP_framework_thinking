@@ -1,5 +1,7 @@
 <?php
 
+use core\App;
+
 require 'core/functions.php';
 
 // $config = require_once 'config.php';

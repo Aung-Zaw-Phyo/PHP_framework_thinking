@@ -33,7 +33,7 @@ class Router {
         if(!array_key_exists($uri, $this->routes[$method])){
             dd('404 page');
         }
-        $explosion = explode('@', $this->routes[$method][$uri]);
+        $explosion = $this->routes[$method][$uri];
         $this->callAction($explosion[0], $explosion[1]);
     }
 

@@ -1,4 +1,6 @@
 <?php
+namespace controllers;
+use core\App;
 
 class PagesController {
 
@@ -23,11 +25,11 @@ class PagesController {
     }
 
     public function userCreate () {
-        checkCount($_POST['name'], 3, '/');
+        checkCount(request('name'), 3, '/');
         App::get('database')->insert('users',[
-            'name' => $_POST['name'],
+            'name' => request('name'),
         ]);
-        return header('location: /');
+        redirect('/');
     }
 
 }
