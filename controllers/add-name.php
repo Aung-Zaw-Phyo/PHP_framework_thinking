@@ -1,11 +1,6 @@
 <?php
 
-checkCount($_POST['name'], 3, '/');
 
-
-App::get('database')->insert('users',[
-    'name' => $_POST['name'],
-]);
 
 // App::get('database')->update('tasks', [
 //     'description' => 'go to the class',
